@@ -1,4 +1,5 @@
 import './charInfo.scss';
+import PropTypes from 'prop-types'; // ES6
 import { Component } from 'react';
 import Spinner from '../spinner/Spinner'
 import ErrorMessage from '../errorMessage/ErrorMessage';
@@ -112,5 +113,8 @@ allComics
                 </ul>
         </>
     )
+}
+CharInfo.propTypes = {
+    charId: PropTypes.number
 }
 export default CharInfo;
